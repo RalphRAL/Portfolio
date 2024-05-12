@@ -1,0 +1,132 @@
+  /* 
+    Colors:
+    Main: #0C1017 
+    Secondary: #171A21
+    Font: #fff
+  */
+  @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+* {
+    scroll-behavior: smooth;
+    color: #fff;
+    font-family: "Unica One", sans-serif;
+  }
+  body{
+    background-color: #0C1017 ;
+  }
+  
+  /* Set the width of the side navigation */
+  .sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+    background-color: #171A21 ;
+
+
+  }
+
+  /* Style the navigation links */
+  .sidenav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    display: block;
+    color: #fff;
+  }
+
+  /* Change color on hover */
+  .sidenav a:hover {
+    background-color: #343840;
+    transition: .5s;
+  }
+
+  /* Hide close button for large screens */
+  @media screen and (min-width: 992px) {
+    .sidenav .closebtn {
+      display: none;
+    }
+
+    .content {
+      margin-left: 250px;
+    }
+  }
+
+  /* Responsive navigation */
+  @media screen and (max-width: 768px) {
+    .sidenav {
+      width: 100%;
+      left: -100%;
+      transition: left 0.5s;
+      overflow-y: auto;
+      text-align: center;
+      
+    }
+
+    .content {
+      margin-top: 70px; /* Adjusted top margin to accommodate the fixed navbar */
+    }
+
+    .sidenav a {
+      padding: 10px 25px;
+    }
+
+    .sidenav.show {
+      left: 0;
+    }
+
+    /* Adjust content width when side navbar is open */
+    .content.opened {
+      margin-left: 250px;
+      width: calc(100% - 250px);
+    }
+  }
+  .cont{
+    background-color: #0C1017 ;
+    height: 100vh;
+    margin-left: 2%;
+  }
+  .name{
+    text-align: center;
+    color: #378EF8;
+    font-size: 1.6rem;
+  }
+  .ptitle{
+    color: rgb(116,122,145);
+  }
+  .container{
+    background: #171A21;
+    outline: 1.5px solid #31373D;
+    height: auto;
+    border-radius: 10px;
+    
+  }@media (max-width: 767px) {
+    .col-md-6 {
+      width: 100%;
+      margin-bottom: 20px; /* Adjust spacing as needed */
+    }
+  }
+  .social-icon {
+    font-size: 24px;
+    color: #fff;
+    margin-left: 5%;
+    margin-top: 10%;
+  }
+  button{
+    background:#378EF8;
+    border: none;
+    height: 3rem;
+    width: fit-content; 
+    transition: .50s;
+  }
+  button:hover{
+    background-color:#31373D;
+    transition: .50s;
+  }
